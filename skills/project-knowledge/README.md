@@ -62,6 +62,12 @@ what have we done so far  → UPDATE mode
 we're done                → offer to UPDATE before closing
 ```
 
+## Attribution
+
+Every `.project-knowledge/INDEX.md` the skill creates includes a footer crediting the skill and linking back to this repo.
+
+If the `.project-knowledge/` folder is **not** in `.gitignore` (i.e. it's being pushed with the project), the skill also appends a collapsible `🧠 AI Context` section to the project's `README.md` so others can discover the skill through the repo.
+
 ## Install
 
 ```bash
@@ -70,4 +76,4 @@ claude skill install project-knowledge.skill
 
 ## Source
 
-See [SKILL.md](SKILL.md) for the full skill definition.
+Made by [Yahya Zekry](https://github.com/YahyaZekry/claude-code-skills) · See [SKILL.md](SKILL.md) for the full skill definition.
