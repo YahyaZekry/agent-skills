@@ -2,11 +2,11 @@
 
 A collection of custom skills for [Claude Code](https://claude.ai/code) — the AI coding CLI by Anthropic.
 
-General-purpose skills only. For Obsidian-specific skills (research, note-linking, vault health checks), see the sibling repo: [claude-code-obsidian-skills](https://github.com/YahyaZekry/claude-code-obsidian-skills).
+General-purpose skills only. For Obsidian-specific skills (note-linking, themed anthologies, vault health checks), see the sibling repo: [obsidian-skills](https://github.com/YahyaZekry/obsidian-skills).
 
 ## Available Skills
 
-> `project-knowledge` now lives in its own repo: [claude-code-project-knowledge](https://github.com/YahyaZekry/claude-code-project-knowledge).
+> `project-knowledge` now lives in its own repo: [project-knowledge-skill](https://github.com/YahyaZekry/project-knowledge-skill).
 
 | Skill | Description | Install |
 |-------|-------------|---------|
@@ -18,10 +18,10 @@ General-purpose skills only. For Obsidian-specific skills (research, note-linkin
 ### Option 1 — Install from this repo
 ```bash
 # Clone the repo
-git clone https://github.com/YahyaZekry/claude-code-skills.git
+git clone https://github.com/YahyaZekry/agent-skills.git
 
 # Install a skill (from the repo root)
-claude skill install ./claude-code-skills/concise-mode.skill
+claude skill install ./agent-skills/concise-mode.skill
 ```
 
 ### Option 2 — Direct download
