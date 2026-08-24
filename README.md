@@ -6,10 +6,12 @@ General-purpose skills only. For Obsidian-specific skills (research, note-linkin
 
 ## Available Skills
 
+> `project-knowledge` now lives in its own repo: [claude-code-project-knowledge](https://github.com/YahyaZekry/claude-code-project-knowledge).
+
 | Skill | Description | Install |
 |-------|-------------|---------|
 | [concise-mode](skills/concise-mode/SKILL.md) | Reduces token usage ~75% by stripping filler — narration, preambles, closings — without touching reasoning, tool use, or code | [Download](concise-mode.skill) |
-| [project-knowledge](skills/project-knowledge/SKILL.md) | Maintains a `.project-knowledge/` folder — one file per concern, a master index for navigation. Auto-scans on first run, orients new sessions, updates only what changed | [Download](project-knowledge.skill) |
+| [code-craft](skills/code-craft/SKILL.md) | Minimal-code mode — write the least code that correctly solves the task, match the surrounding abstraction level, and stop before adding what wasn't asked for | [Download](code-craft.skill) |
 
 ## Installation
 
@@ -36,7 +38,7 @@ Once installed, invoke a skill by name in Claude Code:
 concise mode
 ```
 ```
-project knowledge
+code-craft
 ```
 
 ## Skills Overview
@@ -49,16 +51,11 @@ Reduces token usage ~75% by stripping verbal filler — without changing how Cla
 
 ---
 
-### `project-knowledge`
-Maintains a `.project-knowledge/` folder at your project root — one focused file per concern (`schema.md`, `routes.md`, `hooks.md`, `roadmap.md`, etc.) with a master `INDEX.md` that tells any AI session which files to load for a given task. Keeps sessions context-aware without re-explaining the project from scratch.
+### `code-craft`
+Minimal-code mode. Writes the least code that correctly solves the task, matches the surrounding codebase's abstraction level, and stops before adding anything that wasn't asked for. Stays active for the rest of the conversation. Also works on existing code — share something over-built and ask for it simpler.
 
-Four modes:
-- **MIGRATE** — old `PROJECT_KNOWLEDGE.md` found → splits it into the new folder structure
-- **CREATE** — no folder yet → scans codebase, generates all relevant files
-- **ORIENT** — fresh session → loads `INDEX.md`, picks relevant files, gives a brief
-- **UPDATE** — mid-session → detects what changed, updates only affected files
-
-**Trigger:** `project knowledge`
+**Trigger:** `code-craft`, `minimal mode`, `keep it simple`, `stop over-engineering`, `simplify this`
+**Deactivate:** `code-craft off`
 
 ---
 
